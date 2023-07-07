@@ -12,6 +12,7 @@ public class Main {
         double balance=sc.nextDouble();
         SBIUser user=new SBIUser(name,password,balance);
 
+        System.out.println(user.getAccountNumber());
         // add money
         String msg=user.addMoney(100000);
         System.out.println(msg);
@@ -29,7 +30,7 @@ public class Main {
         System.out.println(user.withdrawMoney(amt,pass));
 
         //calculate interest
-        System.out.println(user.calculateIntrest(10));
+        System.out.println("Your balance is "+ balance+" and the interest will be "+user.calculateIntrest(10));
 
 
     }
